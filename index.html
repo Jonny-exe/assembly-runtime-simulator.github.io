@@ -1,0 +1,65 @@
+<html>
+<head>
+	<title>Hello</title>
+	    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="text/javascript" src="main.js" defer></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+
+</head>
+
+<style>
+	table{
+	   overflow-y:scroll;
+	   height:30vh;
+	   width: 40vw;
+	}
+
+</style>
+<body style="height: 100vh; overflow-y: auto;">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	<h1>Input your code</h1>
+	<div style="display:flex;">
+		<div>
+			<textarea type="text" id="codeInput" class="input-xlarge" rows="10"></textarea>
+			<button type="button" id="codeSubmit" class="btn btn-primary">Submit</button>
+			<button type="button" id="codeNext" class="btn btn-primary">Next</button>
+		</div>
+		<div>
+			<table id="codeTable" class="table table-bordered table-hover">
+				<thead>
+					<tr>
+						<th scope="col">#</th>
+						<th scope="col">Code</th>
+					</tr>
+				</thead>
+				<tbody id="codeTableBody">
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<div style="display: flex; flex-directin: vertical; width: 90%; padding: 1%; text-align: center !important; overflow: auto;">
+		<table style="margin-right: 2%;" id="memTable" style="width: 50%" class="table table-bordered table-hover">
+			<thead>
+				<tr>
+					<th scope="col">#</th>
+					<th scope="col">Mem Value</th>
+				</tr>
+			</thead>
+			<tbody id="memTableBody">
+			</tbody>
+		</table>
+			<table id="rTable" style="width: 100%" class="table table-bordered table-hover">
+				<thead>
+					<tr>
+						<th>#</th>
+						<th>R Value</th>
+					</tr>
+				</thead>
+				<tbody id="rTableBody">
+				</tbody>
+			</table>
+	</div>
+</body>
+</html>
